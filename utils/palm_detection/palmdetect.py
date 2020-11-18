@@ -53,10 +53,10 @@ def detect(Lock,cap):
             break       
 #os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 #os.chdir("F:\\WorkSpace\\Projects\\GrayClassifier\\with_haar_test")
-left_cascade = cv2.CascadeClassifier("D:\\WorkSpace\\Testing\\Haarcascades\\Hand\\left.xml")  #PALM POINT LEFT
-right_cascade = cv2.CascadeClassifier("D:\\WorkSpace\\Testing\\Haarcascades\\Hand\\right.xml") #RIGHT PALM POINT TOP cyan
-left_palm = cv2.CascadeClassifier("D:\\WorkSpace\\Testing\\Haarcascades\\Hand\\lpalm.xml") 
-right_palm = cv2.CascadeClassifier("D:\\WorkSpace\\Testing\\Haarcascades\\Hand\\rpalm.xml") #RIGHT PALM POINT TOP 
+left_cascade = cv2.CascadeClassifier("../haarcascades/left.xml")  #PALM POINT LEFT
+right_cascade = cv2.CascadeClassifier("../haarcascades/right.xml") #RIGHT PALM POINT TOP cyan
+left_palm = cv2.CascadeClassifier("../haarcascades/lpalm.xml") 
+right_palm = cv2.CascadeClassifier("../haarcascades/rpalm.xml") #RIGHT PALM POINT TOP 
 
 xmin_offset=70
 ymin_offset=60
