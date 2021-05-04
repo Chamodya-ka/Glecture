@@ -19,7 +19,7 @@ def getgesture(scores):
     else:
         return "Unknown"
         
-def detectgesture(image):
+def detect_gesture(image):
     img = cv2.cvtColor(cv2.resize(image,(240,240)),cv2.COLOR_BGR2GRAY)
     img_array = keras.preprocessing.image.img_to_array(img)
     img_array/=255.
@@ -44,7 +44,7 @@ def detectgesture(coord):
     scores = predictions[0][0],predictions[0][1],predictions[0][2],predictions[0][3]
     return getgesture(scores) , scores
 '''
-model_loaded = keras.models.load_model('F:\\WorkSpace\\Projects\\GrayClassifier\\classification_model\\date_09_25.h5')
+model_loaded = keras.models.load_model('F:\\WorkSpace\\Projects\\GrayClassifier\\classification_model\\model')
 
 
 
